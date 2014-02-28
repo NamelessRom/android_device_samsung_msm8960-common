@@ -92,8 +92,8 @@ BOARD_HAVE_NEW_QC_GPS := true
 # Use CAF media driver variant for 8960
 TARGET_QCOM_MEDIA_VARIANT := caf
 
-# CM only flag which is not needed for our display-caf
-# TARGET_DISPLAY_USE_RETIRE_FENCE := false
+# Use retire fence from MDP driver
+TARGET_DISPLAY_USE_RETIRE_FENCE := true
 
 # SELinux
 BOARD_SEPOLICY_DIRS += \
